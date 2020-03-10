@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1583858267 source:/root/uni/an_1/sem_2/OOP/laborator/lab_2/main.cpp
+	<iostream>
+	"complex.h"
+
+1583858648 /root/uni/an_1/sem_2/OOP/laborator/lab_2/complex.h
+
+1583858684 source:/root/uni/an_1/sem_2/OOP/laborator/lab_2/complex.cpp
+	"complex.h"
+	<iostream>
+
