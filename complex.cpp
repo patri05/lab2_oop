@@ -42,12 +42,4 @@ complex complex::add(complex a, complex b)
     return x;
 }
 
-void complex::print(complex x)
-{
-    if(x.get_imaginary() < 0)
-        std::cout<<x.get_real()<<"-"<<x.get_imaginary()<<"i"<<std::endl;
-    if(x.get_imaginary() > 0)
-        std::cout<<x.get_real()<<"+"<<x.get_imaginary()<<"i"<<std::endl;
-    if(x.get_imaginary() == 0)
-        std::cout<<x.get_real()<<std::endl;
-}
+
