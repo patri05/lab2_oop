@@ -1,5 +1,6 @@
 #include "complex.h"
 #include <iostream>
+#include <math.h>
 
 complex::complex()
 {
@@ -34,12 +35,13 @@ void complex::set_imaginary(double i)
     imaginary = i;
 }
 
-complex complex::add(complex a, complex b)
+complex operator+(complex a, complex b)
 {
-    complex x;
-    x.set_real(a.get_real()+b.get_real());
-    x.set_imaginary(a.get_imaginary()+b.get_imaginary());
-    return x;
+    return complex(a.get_real()+b.get_real(),a.get_imaginary()+b.get_imaginary());
 }
 
+double complex::modul()
+{
+    return sqrt(this->real*this->real+this->imaginary*this->imaginary);
+}
 
