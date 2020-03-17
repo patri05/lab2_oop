@@ -21,9 +21,11 @@ class complex
 
         void set_imaginary(double i);
 
-        complex add(complex a, complex b);
+        friend complex operator+(complex a, complex b);
 
         void print(complex x);
+
+        double modul();
 
 };
 #endif // COMPLEX_H
